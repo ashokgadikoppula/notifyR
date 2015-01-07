@@ -1,6 +1,6 @@
 # NotifyR
 
-NotifyR is a nice gem to send notifications
+NotifyR is a nice gem to send exception notifications
 
 ## Installation
 
@@ -17,8 +17,16 @@ Or install it yourself as:
     $ gem install notifyR
 
 ## Usage
+Smtp settings must be setup
 
-TODO: Write usage instructions here
+NotifyR.notify_exception(from_address, to_address, subject, exception, server_name)
+
+from_address: Must be a email string
+to_address: Must be a email string comma separated in case of muliple
+subject: optional string(optional)
+exception: Exception object(optional)
+server_name: optional string(optional)
+
 
 ## Contributing
 

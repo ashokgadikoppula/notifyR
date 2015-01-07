@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["ashokgadikoppula\n"]
   spec.email         = ["ashokgadikoppula@gmail.com"]
   spec.summary       = "NotifyR is a nice gem"
-  spec.description   = %q{NotifyR is a nice gem to send notifications}
+  spec.description   = %q{NotifyR is a nice gem to send exception notifications}
   spec.homepage      = ""
   spec.license       = "MIT"
 
