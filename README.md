@@ -17,16 +17,14 @@ Or install it yourself as:
     $ gem install notifyR
 
 ## Usage
-	#Smtp settings must be setup
-	
-	NotifyR.notify_exception(from_address, to_address, subject, exception, server_name)
+```ruby
+	## Assuming smtp settings have already been setup in your application 
+	NotifyR.notify_exception(from_address, to_address, subject(optional), exception(optional), server_name(optional)).deliver
 
-	from_address: Must be a email string
-	to_address: Must be a email string comma separated in case of muliple
-	subject: optional string(optional)
-	exception: Exception object(optional)
-	server_name: optional string(optional)
-
+	## example
+	NotifyR.notify_exception("example@example.com", "developer1@example.com, developer2@example.com", "Error in User model", exception, "Production Server").deliver
+	## here exception in an Exception object
+```
 
 ## Contributing
 
