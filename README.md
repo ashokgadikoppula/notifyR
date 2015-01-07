@@ -17,15 +17,15 @@ Or install it yourself as:
     $ gem install notifyR
 
 ## Usage
-Smtp settings must be setup
+	#Smtp settings must be setup
+	
+	NotifyR.notify_exception(from_address, to_address, subject, exception, server_name)
 
-NotifyR.notify_exception(from_address, to_address, subject, exception, server_name)
-
-from_address: Must be a email string
-to_address: Must be a email string comma separated in case of muliple
-subject: optional string(optional)
-exception: Exception object(optional)
-server_name: optional string(optional)
+	from_address: Must be a email string
+	to_address: Must be a email string comma separated in case of muliple
+	subject: optional string(optional)
+	exception: Exception object(optional)
+	server_name: optional string(optional)
 
 
 ## Contributing
