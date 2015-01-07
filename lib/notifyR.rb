@@ -1,6 +1,4 @@
 
-require "notify_r/version"
-
 module NotifyR 
 	class NotifyDeveloper
 		attr_accessor :developer, :exception, :server_name
