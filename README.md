@@ -23,7 +23,7 @@ Or install it yourself as:
 
 	## example
 	NotifyR.notify_exception("example@example.com", "developer1@example.com, developer2@example.com", "Error in User model", exception, "Production Server").deliver
-	## here exception in an Exception object
+	## here exception in an object of Exception class
 ```
 
 ## Contributing
