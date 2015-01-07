@@ -1,6 +1,6 @@
 
 class NotifyR < ActionMailer::Base
-  def notify_exception(from_address, to_address, subject=nil, exception=nil, server_name=nil)
+  def notify_exception_to_developers(from_address, to_address, subject=nil, exception=nil, server_name=nil)
     unless from_address
       raise ArgumentError.new("From address is needed")
     end

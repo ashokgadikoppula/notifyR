@@ -19,10 +19,10 @@ Or install it yourself as:
 ## Usage
 ```ruby
 	## Assuming smtp settings have already been setup in your application 
-	NotifyR.notify_exception(from_address, to_address, subject(optional), exception(optional), server_name(optional)).deliver
+	NotifyR.notify_exception_to_developers(from_address, to_address, subject(optional), exception(optional), server_name(optional)).deliver
 
 	## example
-	NotifyR.notify_exception("example@example.com", "developer1@example.com, developer2@example.com", "Error in User model", exception, "Production Server").deliver
+	NotifyR.notify_exception_to_developers("example@example.com", "developer1@example.com, developer2@example.com", "Error in User model", exception, "Production Server").deliver
 	## here exception in an object of Exception class
 ```
 
